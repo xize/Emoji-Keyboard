@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62CB1EE6-A118-46F8-96BC-5C8553107D8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>emoji_keyboard</RootNamespace>
+    <AssemblyName>emoji_keyboard</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>emoji_keyboard.src.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\happy.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="src\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grinic_face_with_smiling_eyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face_of_joy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy_tear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shy_smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tongue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coolguy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love_eyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissingface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissingface_with_smile_eyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissingface_shy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shysmile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy_smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hug_smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angel_smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartguy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thinkface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shocked_smilley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emotionless_smilley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scared_eyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rolleyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coolshy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad_xd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad_sigh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wow_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zipped_emoticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wow_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sleepy_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tired_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sleepface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feelinggood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stickytounge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stick_tongue_one_eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one_eye_xd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigh_notear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confused.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upside_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_emoticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\astonished_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sick_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sick_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sick_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confounded_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disappointed_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worried_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mad_steam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crying_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loudly_crying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frowning_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aguised_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aguised_tear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wear_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theeth_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry_tear_cold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screaming_fear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love_eyes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dizzy_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pouting_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry_face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiling_with_horns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jap_orge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\japanese_goblin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skukk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
