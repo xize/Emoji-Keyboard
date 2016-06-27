@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace emoji_keyboard.src
 {
-    partial class Form1
+    partial class Window
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace emoji_keyboard.src
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button71 = new System.Windows.Forms.Button();
