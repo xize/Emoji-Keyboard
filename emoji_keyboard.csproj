@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SmilleyRegex.cs" />
     <Compile Include="src\Window.cs">
       <SubType>Form</SubType>
     </Compile>

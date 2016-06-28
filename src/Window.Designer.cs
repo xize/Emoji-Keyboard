@@ -38,6 +38,8 @@ namespace emoji_keyboard.src
             this.button71 = new System.Windows.Forms.Button();
             this.button72 = new System.Windows.Forms.Button();
             this.icon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.button79 = new System.Windows.Forms.Button();
             this.button78 = new System.Windows.Forms.Button();
             this.button77 = new System.Windows.Forms.Button();
@@ -115,8 +117,7 @@ namespace emoji_keyboard.src
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,9 +125,10 @@ namespace emoji_keyboard.src
             // 
             this.richTextBox1.Location = new System.Drawing.Point(246, 569);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(384, 48);
+            this.richTextBox1.Size = new System.Drawing.Size(194, 48);
             this.richTextBox1.TabIndex = 92;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label1
             // 
@@ -140,7 +142,7 @@ namespace emoji_keyboard.src
             // 
             // button71
             // 
-            this.button71.Location = new System.Drawing.Point(636, 569);
+            this.button71.Location = new System.Drawing.Point(637, 569);
             this.button71.Name = "button71";
             this.button71.Size = new System.Drawing.Size(75, 23);
             this.button71.TabIndex = 94;
@@ -150,7 +152,7 @@ namespace emoji_keyboard.src
             // 
             // button72
             // 
-            this.button72.Location = new System.Drawing.Point(637, 594);
+            this.button72.Location = new System.Drawing.Point(638, 594);
             this.button72.Name = "button72";
             this.button72.Size = new System.Drawing.Size(75, 23);
             this.button72.TabIndex = 95;
@@ -165,6 +167,22 @@ namespace emoji_keyboard.src
             this.icon.Text = "Emoji Keyboard";
             this.icon.Visible = true;
             this.icon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.icon_MouseDoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(102, 26);
+            this.contextMenuStrip1.TabStop = true;
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(101, 22);
+            this.toolStripMenuItem1.Text = "close";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // button79
             // 
@@ -1090,28 +1108,22 @@ namespace emoji_keyboard.src
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // contextMenuStrip1
+            // richTextBox2
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 48);
-            this.contextMenuStrip1.TabStop = true;
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            this.richTextBox2.Location = new System.Drawing.Point(437, 569);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(194, 48);
+            this.richTextBox2.TabIndex = 96;
+            this.richTextBox2.Text = "";
+            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem1.Text = "close";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // Form1
+            // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(876, 629);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button72);
             this.Controls.Add(this.button71);
             this.Controls.Add(this.label1);
@@ -1195,7 +1207,7 @@ namespace emoji_keyboard.src
             this.Controls.Add(this.button13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Window";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Emoji Keyboard version 1.0";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
@@ -1292,6 +1304,7 @@ namespace emoji_keyboard.src
         private System.Windows.Forms.NotifyIcon icon;
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem toolStripMenuItem1;
+        private RichTextBox richTextBox2;
     }
 }
 
