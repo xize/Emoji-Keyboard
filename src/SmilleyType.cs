@@ -21,6 +21,7 @@ namespace emoji_keyboard.src
         public static SmilleyType XD = new SmilleyType("xd", new XD());
         public static SmilleyType WINK = new SmilleyType("wink", new Wink());
         public static SmilleyType SHY_SMILE = new SmilleyType("shy_smile", new ShySmile());
+        public static SmilleyType SHY_SMILE_2 = new SmilleyType("shy_smile_2", new ShySmile2());
         public static SmilleyType TONGUE = new SmilleyType("tongue", new Tongue());
         public static SmilleyType COOL_GUY = new SmilleyType("cool_guy", new CoolGuy());
         public static SmilleyType LOVE_EYES = new SmilleyType("love_eyes", new LoveEyes());
