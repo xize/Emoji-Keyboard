@@ -29,6 +29,7 @@ namespace emoji_keyboard.src
         public static SmilleyType KISSING_FACE = new SmilleyType("kissing_face", new KissingFace());
         public static SmilleyType KISSING_FACE_WITH_SMILE = new SmilleyType("kissing_face_with_smile", new KissingFaceWithSmile());
         public static SmilleyType KISSING_FACE_SHY = new SmilleyType("kissing_face_shy", new KissingFaceShy());
+        public static SmilleyType HAPPY_SMILE = new SmilleyType("happy_smile", new HappySmile());
         
         private string name;
         private Smilley smilley;
