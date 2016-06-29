@@ -663,9 +663,9 @@ namespace emoji_keyboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap skukk2 {
+        internal static System.Drawing.Bitmap skull {
             get {
-                object obj = ResourceManager.GetObject("skukk2", resourceCulture);
+                object obj = ResourceManager.GetObject("skull", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -673,9 +673,9 @@ namespace emoji_keyboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap skull {
+        internal static System.Drawing.Bitmap skull2 {
             get {
-                object obj = ResourceManager.GetObject("skull", resourceCulture);
+                object obj = ResourceManager.GetObject("skull2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

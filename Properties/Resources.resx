@@ -298,9 +298,6 @@
   <data name="sigh_notear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sigh_notear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="skukk2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\skukk2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="skull" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -357,5 +354,8 @@
   </data>
   <data name="teeth_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\teeth_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skull2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skull2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
