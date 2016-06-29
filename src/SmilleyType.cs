@@ -83,6 +83,7 @@ namespace emoji_keyboard.src
         public static SmilleyType SMILING_WITH_HORNS = new SmilleyType("smiling_with_horns", new SmileWithHornsFace());
         public static SmilleyType IMP = new SmilleyType("imp", new IMP());
         public static SmilleyType ROBOT_FACE = new SmilleyType("robot_face", new RobotFace());
+        public static SmilleyType POOP_FACE = new SmilleyType("poop_face", new PoopFace());
 
         private string name;
         private Smilley smilley;
