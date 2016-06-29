@@ -61,6 +61,7 @@ namespace emoji_keyboard.src
         public static SmilleyType SICK_FACE = new SmilleyType("sick_face", new SickFace());
         public static SmilleyType SICK_FACE2 = new SmilleyType("sick_face2", new SickFace2());
         public static SmilleyType SICK_FACE3 = new SmilleyType("sick_face3", new SickFace3());
+        public static SmilleyType SAD_FACE2 = new SmilleyType("sad_face2", new SadFace2());
 
         private string name;
         private Smilley smilley;
