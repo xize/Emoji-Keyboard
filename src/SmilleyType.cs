@@ -72,6 +72,7 @@ namespace emoji_keyboard.src
         public static SmilleyType FROWNING_FACE = new SmilleyType("frowning_face", new FrowningFace());
         public static SmilleyType AGUISHED_FACE = new SmilleyType("aguished_face", new AguishedFace());
         public static SmilleyType AGUISHED_TEAR_FACE = new SmilleyType("aguished_tear_face", new AguishedTear());
+        public static SmilleyType WEAR_FACE = new SmilleyType("wear_face", new WearFace());
 
         private string name;
         private Smilley smilley;
