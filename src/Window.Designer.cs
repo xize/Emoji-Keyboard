@@ -117,7 +117,6 @@ namespace emoji_keyboard.src
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,7 +125,7 @@ namespace emoji_keyboard.src
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.richTextBox1.Location = new System.Drawing.Point(246, 569);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(194, 48);
+            this.richTextBox1.Size = new System.Drawing.Size(384, 48);
             this.richTextBox1.TabIndex = 92;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -1109,22 +1108,12 @@ namespace emoji_keyboard.src
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(437, 569);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(194, 48);
-            this.richTextBox2.TabIndex = 96;
-            this.richTextBox2.Text = "";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
-            // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(876, 629);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button72);
             this.Controls.Add(this.button71);
             this.Controls.Add(this.label1);
@@ -1305,7 +1294,6 @@ namespace emoji_keyboard.src
         private System.Windows.Forms.NotifyIcon icon;
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem toolStripMenuItem1;
-        private RichTextBox richTextBox2;
     }
 }
 
