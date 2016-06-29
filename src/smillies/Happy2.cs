@@ -14,11 +14,6 @@ namespace emoji_keyboard.src.smillies
             return "😃";
         }
 
-        public override string getName()
-        {
-            return getType().getName();
-        }
-
         public override Image getSmilleyImage()
         {
             return Properties.Resources.happy2;
