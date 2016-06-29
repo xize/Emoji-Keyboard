@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace emoji_keyboard.src.smillies
 {
-    class SleepyFace : Smilley
+    class SleepFace : Smilley
     {
         public override string getCharacter()
         {
@@ -21,7 +21,7 @@ namespace emoji_keyboard.src.smillies
 
         public override SmilleyType getType()
         {
-            throw new NotImplementedException();
+            return SmilleyType.SLEEP_FACE;
         }
     }
 }
