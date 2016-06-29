@@ -322,9 +322,6 @@
   <data name="thinkface" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thinkface.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tired_face" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tired_face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tongue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tongue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -357,5 +354,8 @@
   </data>
   <data name="skull2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skull2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tired_face" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tired_face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
