@@ -84,6 +84,7 @@ namespace emoji_keyboard.src
         public static SmilleyType IMP = new SmilleyType("imp", new IMP());
         public static SmilleyType ROBOT_FACE = new SmilleyType("robot_face", new RobotFace());
         public static SmilleyType POOP_FACE = new SmilleyType("poop_face", new PoopFace());
+        public static SmilleyType SKULL_FACE = new SmilleyType("skull_face", new SkullFace());
 
         private string name;
         private Smilley smilley;
