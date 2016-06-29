@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SmilleyRegex.cs" />
+    <Compile Include="src\SmilleyRegex.cs" />
     <Compile Include="src\Window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,9 +271,6 @@
     <None Include="Resources\wear_face.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\teeth_close.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cry_tear_cold.png" />
   </ItemGroup>
   <ItemGroup>
@@ -307,9 +304,6 @@
     <None Include="Resources\skull.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\skukk2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ghost.png" />
   </ItemGroup>
   <ItemGroup>
@@ -326,6 +320,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\happy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth_close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
