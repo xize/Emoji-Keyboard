@@ -212,7 +212,7 @@ namespace emoji_keyboard.src
             // button77
             // 
             this.button77.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button77.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button77.BackgroundImage")));
+            this.button77.BackgroundImage = global::emoji_keyboard.Properties.Resources.android;
             this.button77.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button77.Location = new System.Drawing.Point(790, 480);
             this.button77.Name = "button77";
@@ -248,7 +248,7 @@ namespace emoji_keyboard.src
             // button74
             // 
             this.button74.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button74.BackgroundImage = global::emoji_keyboard.Properties.Resources.skukk2;
+            this.button74.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button74.BackgroundImage")));
             this.button74.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button74.Location = new System.Drawing.Point(558, 480);
             this.button74.Name = "button74";
@@ -704,7 +704,7 @@ namespace emoji_keyboard.src
             // button34
             // 
             this.button34.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button34.BackgroundImage = global::emoji_keyboard.Properties.Resources.tired_face;
+            this.button34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button34.BackgroundImage")));
             this.button34.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button34.Location = new System.Drawing.Point(12, 246);
             this.button34.Name = "button34";
