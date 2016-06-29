@@ -54,6 +54,7 @@ namespace emoji_keyboard.src
         public static SmilleyType SIGH_NO_TEAR = new SmilleyType("sigh_no_tear", new SighNoTear());
         public static SmilleyType SIGH_FACE = new SmilleyType("sigh_face", new SighFace());
         public static SmilleyType SAD_FACE = new SmilleyType("sad_face", new SadFace());
+        public static SmilleyType CONFUSED_FACE = new SmilleyType("confused_face", new ConfusedFace());
         
         private string name;
         private Smilley smilley;
