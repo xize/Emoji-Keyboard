@@ -21,7 +21,7 @@ namespace emoji_keyboard.src.smillies
 
         public override SmilleyType getType()
         {
-            throw new NotImplementedException();
+            return SmilleyType.KISSING_FACE_WITH_SMILE;
         }
     }
 }
