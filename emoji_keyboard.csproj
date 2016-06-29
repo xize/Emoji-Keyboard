@@ -271,7 +271,7 @@
     <None Include="Resources\wear_face.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\theeth_close.png" />
+    <None Include="Resources\teeth_close.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cry_tear_cold.png" />

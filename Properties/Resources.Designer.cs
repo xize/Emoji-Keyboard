@@ -743,9 +743,9 @@ namespace emoji_keyboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap theeth_close {
+        internal static System.Drawing.Bitmap teeth_close {
             get {
-                object obj = ResourceManager.GetObject("theeth_close", resourceCulture);
+                object obj = ResourceManager.GetObject("teeth_close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

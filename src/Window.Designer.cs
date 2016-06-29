@@ -367,7 +367,7 @@ namespace emoji_keyboard.src
             // button62
             // 
             this.button62.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button62.BackgroundImage = global::emoji_keyboard.Properties.Resources.theeth_close;
+            this.button62.BackgroundImage = global::emoji_keyboard.Properties.Resources.teeth_close;
             this.button62.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button62.Location = new System.Drawing.Point(480, 402);
             this.button62.Name = "button62";
