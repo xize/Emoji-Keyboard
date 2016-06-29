@@ -108,6 +108,11 @@ namespace emoji_keyboard.src
             return name;
         }
 
+        public Smilley getSmilley()
+        {
+            return smilley;
+        }
+
         public static KeyValuePair<string, SmilleyType>[] values()
         {
             return smillies.ToArray();
