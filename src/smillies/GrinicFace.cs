@@ -15,11 +15,6 @@ namespace emoji_keyboard.src.smillies
             return "😁";
         }
 
-        public override string getName()
-        {
-            return getType().getName();
-        }
-
         public override Image getSmilleyImage()
         {
             return Properties.Resources.grinic_face_with_smiling_eyes;

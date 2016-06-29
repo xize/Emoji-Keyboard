@@ -10,10 +10,6 @@ namespace emoji_keyboard.src.smillies
 {
     class Happy : Smilley
     {
-        public override string getName()
-        {
-            return getType().getName();
-        }
 
         public override Image getSmilleyImage()
         {

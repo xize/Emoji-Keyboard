@@ -13,7 +13,10 @@ namespace emoji_keyboard.src.smillies
 
         private Label smilley;
 
-       public abstract string getName();
+       public string getName()
+        {
+            return getType().getName();
+        }
 
         public abstract SmilleyType getType();
 
