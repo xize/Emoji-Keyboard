@@ -16,6 +16,7 @@ namespace emoji_keyboard.src.smillies
         public static SmilleyType GRINIC_FACE = new SmilleyType("grinic_face", new GrinicFace());
         public static SmilleyType JOY_FACE = new SmilleyType("joy_face", new JoyFace());
         public static SmilleyType HAPPY_2 = new SmilleyType("happy_2", new Happy2());
+        public static SmilleyType HAPPY_3 = new SmilleyType("happy_3", new Happy3());
         
         private string name;
         private Smilley smilley;
