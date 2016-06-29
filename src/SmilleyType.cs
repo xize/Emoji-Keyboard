@@ -67,6 +67,8 @@ namespace emoji_keyboard.src
         public static SmilleyType DISAPPOINTED_FACE = new SmilleyType("disappointed_face", new DisappointedFace());
         public static SmilleyType WORRIED_FACE = new SmilleyType("worried_face", new WorriedFace());
         public static SmilleyType MAD_STEAM_FACE = new SmilleyType("mad_steam_face", new MadSteamFace());
+        public static SmilleyType CRY_FACE = new SmilleyType("cry_face", new CryingFace());
+        public static SmilleyType LOUDCRY_FACE = new SmilleyType("loudcry_face", new LoudCryFace());
 
         private string name;
         private Smilley smilley;
