@@ -53,6 +53,7 @@ namespace emoji_keyboard.src
         public static SmilleyType XD_ONE_EYE = new SmilleyType("xd_one_eye", new XDEye());
         public static SmilleyType SIGH_NO_TEAR = new SmilleyType("sigh_no_tear", new SighNoTear());
         public static SmilleyType SIGH_FACE = new SmilleyType("sigh_face", new SighFace());
+        public static SmilleyType SAD_FACE = new SmilleyType("sad_face", new SadFace());
         
         private string name;
         private Smilley smilley;
