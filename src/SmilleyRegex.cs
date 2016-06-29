@@ -99,6 +99,7 @@ namespace emoji_keyboard
             {
                 while(box.Text.Contains(data.Key))
                 {
+                    //TODO: add Label with a image when the text has been set ;-)
                     Image img = new Bitmap(data.Value, 23, 23);
                     int id = box.Text.IndexOf(data.Key);
                     box.Select(id, data.Key.Length);
