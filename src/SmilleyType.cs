@@ -50,6 +50,7 @@ namespace emoji_keyboard.src
         public static SmilleyType FEELING_GOOD_FACE = new SmilleyType("feeling_good_face", new FeelingGoodFace());
         public static SmilleyType STICKY_TONGUE = new SmilleyType("sticky_tongue", new StickyTongue());
         public static SmilleyType STICKY_TONGUE_ONE_EYE = new SmilleyType("sticky_tongue_one_eye", new StickyTongueEye());
+        public static SmilleyType XD_ONE_EYE = new SmilleyType("xd_one_eye", new XDEye());
         
         private string name;
         private Smilley smilley;
