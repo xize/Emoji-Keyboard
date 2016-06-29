@@ -23,6 +23,7 @@ namespace emoji_keyboard.src
         public static SmilleyType SHY_SMILE = new SmilleyType("shy_smile", new ShySmile());
         public static SmilleyType TONGUE = new SmilleyType("tongue", new Tongue());
         public static SmilleyType COOL_GUY = new SmilleyType("cool_guy", new CoolGuy());
+        public static SmilleyType LOVE_EYES = new SmilleyType("love_eyes", new LoveEyes());
         
         private string name;
         private Smilley smilley;
