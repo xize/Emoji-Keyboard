@@ -33,6 +33,7 @@ namespace emoji_keyboard.src
         public static SmilleyType HUG_SMILE = new SmilleyType("hug_smile", new HugSmile());
         public static SmilleyType ANGEL_SMILE = new SmilleyType("angel_smile", new AngelSmile());
         public static SmilleyType SMART_GUY = new SmilleyType("smart_guy", new SmartGuy());
+        public static SmilleyType THINK_FACE = new SmilleyType("think_face", new ThinkFace());
         
         private string name;
         private Smilley smilley;
