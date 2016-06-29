@@ -43,6 +43,7 @@ namespace emoji_keyboard.src
         public static SmilleyType SAD_SIGH = new SmilleyType("sad_sigh", new SadSigh());
         public static SmilleyType WOW = new SmilleyType("wow", new Wow());
         public static SmilleyType ZIPPED_FACE = new SmilleyType("zipped_face", new ZippedFace());
+        public static SmilleyType WOW_2 = new SmilleyType("wow_2", new Wow2());
         
         private string name;
         private Smilley smilley;
