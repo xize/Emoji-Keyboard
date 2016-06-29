@@ -319,7 +319,7 @@ namespace emoji_keyboard.src
             // button66
             // 
             this.button66.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button66.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button66.BackgroundImage")));
+            this.button66.BackgroundImage = global::emoji_keyboard.Properties.Resources.dizzy_face;
             this.button66.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button66.Location = new System.Drawing.Point(790, 402);
             this.button66.Name = "button66";
@@ -367,7 +367,7 @@ namespace emoji_keyboard.src
             // button62
             // 
             this.button62.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button62.BackgroundImage = global::emoji_keyboard.Properties.Resources.teeth_close;
+            this.button62.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button62.BackgroundImage")));
             this.button62.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button62.Location = new System.Drawing.Point(480, 402);
             this.button62.Name = "button62";
