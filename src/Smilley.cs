@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace emoji_keyboard.src.smillies
+namespace emoji_keyboard.src
 {
     abstract class Smilley
     {

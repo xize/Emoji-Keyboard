@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace emoji_keyboard.src.smillies
+namespace emoji_keyboard.src
 {
     class SmilleyType
     {
@@ -21,6 +21,7 @@ namespace emoji_keyboard.src.smillies
         public static SmilleyType XD = new SmilleyType("xd", new XD());
         public static SmilleyType WINK = new SmilleyType("wink", new Wink());
         public static SmilleyType SHY_SMILE = new SmilleyType("shy_smile", new ShySmile());
+        public static SmilleyType TONGUE = new SmilleyType("tongue", new Tongue());
         
         private string name;
         private Smilley smilley;

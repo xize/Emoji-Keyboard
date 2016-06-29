@@ -52,7 +52,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\smillies\GrinicFace.cs" />
+    <Compile Include="src\smillies\Happy.cs" />
+    <Compile Include="src\smillies\Happy2.cs" />
+    <Compile Include="src\smillies\Happy3.cs" />
+    <Compile Include="src\smillies\HappyTear.cs" />
+    <Compile Include="src\smillies\JoyFace.cs" />
+    <Compile Include="src\smillies\ShySmile.cs" />
+    <Compile Include="src\Smilley.cs" />
     <Compile Include="src\SmilleyRegex.cs" />
+    <Compile Include="src\SmilleyType.cs" />
+    <Compile Include="src\smillies\Tongue.cs" />
+    <Compile Include="src\smillies\Wink.cs" />
+    <Compile Include="src\smillies\XD.cs" />
     <Compile Include="src\Window.cs">
       <SubType>Form</SubType>
     </Compile>
