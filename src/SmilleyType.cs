@@ -87,6 +87,7 @@ namespace emoji_keyboard.src
         public static SmilleyType SKULL_FACE = new SmilleyType("skull_face", new SkullFace());
         public static SmilleyType SKULL_FACE2 = new SmilleyType("skull_face2", new SkullFace2());
         public static SmilleyType GHOST_FACE = new SmilleyType("ghost_face", new GhostFace());
+        public static SmilleyType ALIEN_FACE = new SmilleyType("alien_face", new AlienFace());
 
         private string name;
         private Smilley smilley;
