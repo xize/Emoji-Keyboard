@@ -80,6 +80,7 @@ namespace emoji_keyboard.src
         public static SmilleyType DIZZY_FACE = new SmilleyType("dizzy_face", new DizzyFace());
         public static SmilleyType POUTING_FACE = new SmilleyType("pouting_face", new PoutingFace());
         public static SmilleyType ANGRY_FACE = new SmilleyType("angry_face", new AngryFace());
+        public static SmilleyType SMILING_WITH_HORNS = new SmilleyType("smiling_with_horns", new SmileWithHornsFace());
 
         private string name;
         private Smilley smilley;
