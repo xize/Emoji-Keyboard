@@ -38,6 +38,7 @@ namespace emoji_keyboard.src
         public static SmilleyType EMOTIONLESS_FACE = new SmilleyType("emotionless_face", new Emotionless());
         public static SmilleyType SCARED_EYES = new SmilleyType("scared_eyes", new ScaredEyes());
         public static SmilleyType ROLLING_EYES = new SmilleyType("rolling_eyes", new RollEyes());
+        public static SmilleyType COOL_SHY = new SmilleyType("cool_shy", new CoolShy());
         
         private string name;
         private Smilley smilley;
