@@ -45,6 +45,7 @@ namespace emoji_keyboard.src
         public static SmilleyType ZIPPED_FACE = new SmilleyType("zipped_face", new ZippedFace());
         public static SmilleyType WOW_2 = new SmilleyType("wow_2", new Wow2());
         public static SmilleyType SLEEPY_FACE = new SmilleyType("sleepy_face", new SleepyFace());
+        public static SmilleyType TIRED_FACE = new SmilleyType("tired_face", new TiredFace());
         
         private string name;
         private Smilley smilley;
