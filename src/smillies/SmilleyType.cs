@@ -20,6 +20,7 @@ namespace emoji_keyboard.src.smillies
         public static SmilleyType HAPPY_TEAR = new SmilleyType("happy_tear", new HappyTear());
         public static SmilleyType XD = new SmilleyType("xd", new XD());
         public static SmilleyType WINK = new SmilleyType("wink", new Wink());
+        public static SmilleyType SHY_SMILE = new SmilleyType("shy_smile", new ShySmile());
         
         private string name;
         private Smilley smilley;
