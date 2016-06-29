@@ -1,4 +1,4 @@
-﻿using emoji_keyboard.smillies;
+﻿using emoji_keyboard.src.smillies;
 using System;
 using System.Collections.Generic;
 using System.Linq;

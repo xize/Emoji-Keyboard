@@ -6,15 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace emoji_keyboard.smillies
+namespace emoji_keyboard.src.smillies
 {
-    class GrinicFace : Smilley
+    class Happy : Smilley
     {
-        public override string getCharacter()
-        {
-            return "😁";
-        }
-
         public override string getName()
         {
             return getType().getName();
@@ -22,12 +17,17 @@ namespace emoji_keyboard.smillies
 
         public override Image getSmilleyImage()
         {
-            return Properties.Resources.grinic_face_with_smiling_eyes;
+            return Properties.Resources.happy;
+        }
+
+        public override string getCharacter()
+        {
+            return "😀";
         }
 
         public override SmilleyType getType()
         {
-            return SmilleyType.GRINIC_FACE;
+            return SmilleyType.HAPPY;
         }
     }
 }
