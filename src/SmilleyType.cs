@@ -56,6 +56,7 @@ namespace emoji_keyboard.src
         public static SmilleyType SAD_FACE = new SmilleyType("sad_face", new SadFace());
         public static SmilleyType CONFUSED_FACE = new SmilleyType("confused_face", new ConfusedFace());
         public static SmilleyType UPSIDE_DOWN_FACE = new SmilleyType("upside_down_face", new UpsideDownFace());
+        public static SmilleyType MONEY_FACE = new SmilleyType("money_face", new MoneyFace());
         
         private string name;
         private Smilley smilley;
