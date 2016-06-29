@@ -38,5 +38,17 @@ namespace emoji_keyboard.src.smillies
             return smillies.ToArray();
         }
 
+        public static SmilleyType valueOf(string name)
+        {
+            SmilleyType[] types = smillies.Values.ToArray();
+            foreach(SmilleyType type in types)
+            {
+                if(name.ToLower().StartsWith(type.getName()))
+                {
+                    return type;
+                }
+            }
+            return null;
+        }
     }
 }
