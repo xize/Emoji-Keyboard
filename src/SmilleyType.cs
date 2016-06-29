@@ -77,6 +77,7 @@ namespace emoji_keyboard.src
         public static SmilleyType CRY_TEAR_COLD = new SmilleyType("cry_tear_cold", new CryTearColdFace());
         public static SmilleyType SCREAMING_FEAR_FACE = new SmilleyType("screaming_fear_face", new ScreamingFearFace());
         public static SmilleyType LOVE_EYES_2 = new SmilleyType("love_eyes_2", new LoveEyes2());
+        public static SmilleyType DIZZY_FACE = new SmilleyType("dizzy_face", new DizzyFace());
 
         private string name;
         private Smilley smilley;
