@@ -482,6 +482,7 @@ namespace emoji_keyboard.src
         private void button71_Click(object sender, EventArgs e)
         {
             richTextBox1.Clear();
+            richTextBox1.Controls.Clear();
         }
 
         private void button72_Click(object sender, EventArgs e)

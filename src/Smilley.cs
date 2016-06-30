@@ -12,6 +12,8 @@ namespace emoji_keyboard.src
     {
 
         private Label smilley;
+        private Image smallimage;
+        private Button btn;
 
        public string getName()
         {
@@ -24,9 +26,32 @@ namespace emoji_keyboard.src
 
         public abstract string getCharacter();
 
+        public String getUnicodeCharacter()
+        {
+            byte[] utf8 = Encoding.UTF8.GetBytes(getCharacter());
+            string utf = Encoding.UTF8.GetString(utf8);
+            return utf;
+        }
+
+        public Button getButton()
+        {
+            if(btn == null)
+            {
+                this.btn = new Button();
+                btn.Height = 72;
+                btn.Width = 72;
+                btn.BackgroundImage = getSmilleyImage();
+            }
+            return btn;
+        }
+
         public Image getSmallSmilley()
         {
-            return new Bitmap(getSmilleyImage(), 23, 23);
+            if(smallimage == null)
+            {
+                this.smallimage = new Bitmap(getSmilleyImage(), 23, 23);
+            }
+            return smallimage;
         }
         
         public Label getFormSmilley()
