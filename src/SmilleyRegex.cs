@@ -23,17 +23,8 @@ namespace emoji_keyboard.src
                 {
                     int id = match.Index;
                     Label s = smilley.getFormSmilley();
-                    if(id == 0)
-                    {
-                        s.Location = new Point(0, s.Location.Y);
-                        box.Select(id, smilley.getCharacter().Length);
-                    } else
-                    {
-                        s.Location = new Point(s.Location.X + 23 + id, s.Location.Y);
-                        box.Select(id, smilley.getCharacter().Length);
-                    }
-
-                    box.Controls.Add(smilley.getFormSmilley());
+                    
+                    box.Controls.Add(s);
                     
                     //Clipboard.SetImage(smilley.getSmallSmilley());
                     //box.Paste();
