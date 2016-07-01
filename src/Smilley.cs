@@ -11,7 +11,7 @@ namespace emoji_keyboard.src
     abstract class Smilley
     {
 
-        //private Label smilley;
+        private Label smilley;
         private Image smallimage;
         private Button btn;
 
@@ -56,11 +56,14 @@ namespace emoji_keyboard.src
         
         public Label getFormSmilley()
         {
-            Label smilley = new Label();
-            smilley.Margin = new Padding(25,0,0,0);
-            smilley.Height = 23;
-            smilley.Width = 23;
-            smilley.Image = getSmallSmilley();
+            if(this.smilley == null)
+            {
+                this.smilley = new Label();
+                smilley.Margin = new Padding(25, 0, 0, 0);
+                smilley.Height = 23;
+                smilley.Width = 23;
+                smilley.Image = getSmallSmilley();
+            }
             return smilley;
         }
 
