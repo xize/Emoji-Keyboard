@@ -103,6 +103,9 @@
     <Compile Include="src\smillies\Shocked.cs" />
     <Compile Include="src\smillies\ShySmile.cs" />
     <Compile Include="src\Smilley.cs" />
+    <Compile Include="src\ControlWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="src\SmilleyRegex.cs" />
     <Compile Include="src\SmilleyType.cs" />
     <Compile Include="src\smillies\ShySmile2.cs" />
@@ -140,6 +143,9 @@
     </Compile>
     <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="src\ControlWindow.resx">
+      <DependentUpon>ControlWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Window.resx">
       <DependentUpon>Window.cs</DependentUpon>
     </EmbeddedResource>
