@@ -713,6 +713,16 @@ namespace emoji_keyboard.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap smiling_cat_open {
+            get {
+                object obj = ResourceManager.GetObject("smiling_cat_open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap smiling_with_horns {
             get {
                 object obj = ResourceManager.GetObject("smiling_with_horns", resourceCulture);

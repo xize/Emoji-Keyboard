@@ -33,10 +33,6 @@ namespace emoji_keyboard.src
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window));
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button71 = new System.Windows.Forms.Button();
-            this.button72 = new System.Windows.Forms.Button();
             this.icon = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -117,49 +113,9 @@ namespace emoji_keyboard.src
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button71 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.richTextBox1.Location = new System.Drawing.Point(246, 569);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(194, 48);
-            this.richTextBox1.TabIndex = 92;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 555);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 93;
-            this.label1.Text = "emojies:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button71
-            // 
-            this.button71.Location = new System.Drawing.Point(637, 569);
-            this.button71.Name = "button71";
-            this.button71.Size = new System.Drawing.Size(75, 23);
-            this.button71.TabIndex = 94;
-            this.button71.Text = "clear";
-            this.button71.UseVisualStyleBackColor = true;
-            this.button71.Click += new System.EventHandler(this.button71_Click);
-            // 
-            // button72
-            // 
-            this.button72.Location = new System.Drawing.Point(638, 594);
-            this.button72.Name = "button72";
-            this.button72.Size = new System.Drawing.Size(75, 23);
-            this.button72.TabIndex = 95;
-            this.button72.Text = "copy";
-            this.button72.UseVisualStyleBackColor = true;
-            this.button72.Click += new System.EventHandler(this.button72_Click);
             // 
             // icon
             // 
@@ -190,7 +146,7 @@ namespace emoji_keyboard.src
             this.button79.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button79.BackgroundImage = global::emoji_keyboard.Properties.Resources.poop;
             this.button79.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button79.Location = new System.Drawing.Point(402, 480);
+            this.button79.Location = new System.Drawing.Point(948, 90);
             this.button79.Name = "button79";
             this.button79.Size = new System.Drawing.Size(72, 72);
             this.button79.TabIndex = 91;
@@ -202,7 +158,7 @@ namespace emoji_keyboard.src
             this.button78.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button78.BackgroundImage = global::emoji_keyboard.Properties.Resources.robot;
             this.button78.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button78.Location = new System.Drawing.Point(324, 480);
+            this.button78.Location = new System.Drawing.Point(870, 90);
             this.button78.Name = "button78";
             this.button78.Size = new System.Drawing.Size(72, 72);
             this.button78.TabIndex = 90;
@@ -214,7 +170,7 @@ namespace emoji_keyboard.src
             this.button77.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button77.BackgroundImage = global::emoji_keyboard.Properties.Resources.android;
             this.button77.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button77.Location = new System.Drawing.Point(790, 480);
+            this.button77.Location = new System.Drawing.Point(1026, 168);
             this.button77.Name = "button77";
             this.button77.Size = new System.Drawing.Size(72, 72);
             this.button77.TabIndex = 89;
@@ -226,7 +182,7 @@ namespace emoji_keyboard.src
             this.button76.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button76.BackgroundImage = global::emoji_keyboard.Properties.Resources.alien;
             this.button76.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button76.Location = new System.Drawing.Point(714, 480);
+            this.button76.Location = new System.Drawing.Point(948, 168);
             this.button76.Name = "button76";
             this.button76.Size = new System.Drawing.Size(72, 72);
             this.button76.TabIndex = 88;
@@ -238,7 +194,7 @@ namespace emoji_keyboard.src
             this.button75.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button75.BackgroundImage = global::emoji_keyboard.Properties.Resources.ghost;
             this.button75.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button75.Location = new System.Drawing.Point(636, 480);
+            this.button75.Location = new System.Drawing.Point(870, 168);
             this.button75.Name = "button75";
             this.button75.Size = new System.Drawing.Size(72, 72);
             this.button75.TabIndex = 87;
@@ -250,7 +206,7 @@ namespace emoji_keyboard.src
             this.button74.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button74.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button74.BackgroundImage")));
             this.button74.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button74.Location = new System.Drawing.Point(558, 480);
+            this.button74.Location = new System.Drawing.Point(1103, 90);
             this.button74.Name = "button74";
             this.button74.Size = new System.Drawing.Size(72, 72);
             this.button74.TabIndex = 86;
@@ -262,7 +218,7 @@ namespace emoji_keyboard.src
             this.button73.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button73.BackgroundImage = global::emoji_keyboard.Properties.Resources.skull;
             this.button73.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button73.Location = new System.Drawing.Point(480, 480);
+            this.button73.Location = new System.Drawing.Point(1026, 90);
             this.button73.Name = "button73";
             this.button73.Size = new System.Drawing.Size(72, 72);
             this.button73.TabIndex = 85;
@@ -274,7 +230,7 @@ namespace emoji_keyboard.src
             this.button70.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button70.BackgroundImage = global::emoji_keyboard.Properties.Resources.imp;
             this.button70.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button70.Location = new System.Drawing.Point(246, 480);
+            this.button70.Location = new System.Drawing.Point(1104, 12);
             this.button70.Name = "button70";
             this.button70.Size = new System.Drawing.Size(72, 72);
             this.button70.TabIndex = 82;
@@ -286,7 +242,7 @@ namespace emoji_keyboard.src
             this.button69.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button69.BackgroundImage = global::emoji_keyboard.Properties.Resources.smiling_with_horns;
             this.button69.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button69.Location = new System.Drawing.Point(168, 480);
+            this.button69.Location = new System.Drawing.Point(1026, 12);
             this.button69.Name = "button69";
             this.button69.Size = new System.Drawing.Size(72, 72);
             this.button69.TabIndex = 81;
@@ -298,7 +254,7 @@ namespace emoji_keyboard.src
             this.button68.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button68.BackgroundImage = global::emoji_keyboard.Properties.Resources.angry_face;
             this.button68.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button68.Location = new System.Drawing.Point(90, 480);
+            this.button68.Location = new System.Drawing.Point(948, 12);
             this.button68.Name = "button68";
             this.button68.Size = new System.Drawing.Size(72, 72);
             this.button68.TabIndex = 80;
@@ -310,7 +266,7 @@ namespace emoji_keyboard.src
             this.button67.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button67.BackgroundImage = global::emoji_keyboard.Properties.Resources.pouting_face;
             this.button67.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button67.Location = new System.Drawing.Point(12, 480);
+            this.button67.Location = new System.Drawing.Point(870, 12);
             this.button67.Name = "button67";
             this.button67.Size = new System.Drawing.Size(72, 72);
             this.button67.TabIndex = 79;
@@ -1109,26 +1065,24 @@ namespace emoji_keyboard.src
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // richTextBox2
+            // button71
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(437, 569);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(194, 48);
-            this.richTextBox2.TabIndex = 96;
-            this.richTextBox2.Text = "";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            this.button71.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button71.BackgroundImage = global::emoji_keyboard.Properties.Resources.android;
+            this.button71.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button71.Location = new System.Drawing.Point(1103, 168);
+            this.button71.Name = "button71";
+            this.button71.Size = new System.Drawing.Size(72, 72);
+            this.button71.TabIndex = 92;
+            this.button71.UseVisualStyleBackColor = false;
             // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(876, 629);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.button72);
+            this.ClientSize = new System.Drawing.Size(1187, 565);
             this.Controls.Add(this.button71);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button79);
             this.Controls.Add(this.button78);
             this.Controls.Add(this.button77);
@@ -1215,7 +1169,6 @@ namespace emoji_keyboard.src
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1298,14 +1251,11 @@ namespace emoji_keyboard.src
         private System.Windows.Forms.Button button77;
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.Button button79;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button71;
-        private System.Windows.Forms.Button button72;
-        private System.Windows.Forms.NotifyIcon icon;
+        public System.Windows.Forms.NotifyIcon icon;
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem toolStripMenuItem1;
-        private RichTextBox richTextBox2;
+        private ControlWindow controlwindow;
+        private Button button71;
     }
 }
 
