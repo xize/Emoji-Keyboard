@@ -77,6 +77,7 @@ namespace emoji_keyboard.src
             // 
             // preview
             // 
+            this.preview.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.preview.AutoSize = true;
             this.preview.Location = new System.Drawing.Point(13, 175);
             this.preview.Name = "preview";
@@ -92,6 +93,7 @@ namespace emoji_keyboard.src
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ControlWindow";
             this.Text = "Emoji Control Center";
