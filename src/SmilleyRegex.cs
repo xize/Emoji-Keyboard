@@ -24,10 +24,10 @@ namespace emoji_keyboard.src
                     int id = match.Index;
                     Label s = smilley.getFormSmilley();
                     
-                    box.Controls.Add(s);
+                    //box.Controls.Add(s);
                     
-                    //Clipboard.SetImage(smilley.getSmallSmilley());
-                    //box.Paste();
+                    Clipboard.SetImage(smilley.getSmallSmilley());
+                    box.Paste();
                     match = match.NextMatch();
                 }
             }
