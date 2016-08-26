@@ -13,7 +13,7 @@ namespace emoji_keyboard.src
 
         private static SmilleyRegex regex;
 
-        public void convertTextToSmilleys(RichTextBox box)
+        public void convertTextToSmilleys(System.Windows.Forms.Integration.ElementHost box)
         {
             foreach(KeyValuePair<String, SmilleyType> data in SmilleyType.values())
             {
@@ -24,10 +24,8 @@ namespace emoji_keyboard.src
                     int id = match.Index;
                     Label s = smilley.getFormSmilley();
                     
-                    //box.Controls.Add(s);
+                    box.Controls.Add(s);
                     
-                    Clipboard.SetImage(smilley.getSmallSmilley());
-                    box.Paste();
                     match = match.NextMatch();
                 }
             }
