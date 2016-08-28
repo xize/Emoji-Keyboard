@@ -32,7 +32,6 @@ namespace emoji_keyboard.src
             {
                 if(args[0].ToLower() == "-tray")
                 {
-                    Console.WriteLine("I'm trayed");
                     Application.EnableVisualStyles();
                     Application.SetCompatibleTextRenderingDefault(true);
                     Window window = new Window(true);
