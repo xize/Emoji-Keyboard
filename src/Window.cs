@@ -13,11 +13,19 @@ namespace emoji_keyboard.src
     public partial class Window : Form
     {
 
-        public Window()
+        public Window(bool minimized)
         {
             InitializeComponent();
-            this.controlwindow = new ControlWindow(this);
-            this.controlwindow.Show();
+            if (minimized)
+            {
+                this.WindowState = FormWindowState.Minimized;
+                this.Visible = false;
+                this.controlwindow = new ControlWindow(this);
+                controlwindow.Visible = false;
+                this.icon.BalloonTipTitle = "Emoji Keyboard has been minimized";
+                this.icon.BalloonTipText = "in order to open it again, double click on the icon in the start menu";
+                this.icon.ShowBalloonTip(100);
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -585,6 +593,7 @@ namespace emoji_keyboard.src
         private void Form1_Closing(object sender, CancelEventArgs e)
         {
             e.Cancel = true;
+            this.WindowState = FormWindowState.Minimized;
             this.Visible = false;
             controlwindow.Visible = false;
             this.icon.BalloonTipTitle = "Emoji Keyboard has been minimized";
@@ -595,6 +604,7 @@ namespace emoji_keyboard.src
         private void icon_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Visible = true;
+            this.WindowState = FormWindowState.Normal;
             controlwindow.Visible = true;
         }
 
