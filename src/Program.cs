@@ -16,17 +16,32 @@ namespace emoji_keyboard.src
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             if(!mutex.WaitOne(TimeSpan.Zero, false))
             {
                 MessageBox.Show("cannot run a duplicate instance of Emoji-Keyboard!");
                 return;
             }
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Window());
+            if(args.Length == 0)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Window(false));
+            } else if(args.Length == 1)
+            {
+                if(args[0].ToLower() == "-tray")
+                {
+                    Console.WriteLine("I'm trayed");
+                    Application.EnableVisualStyles();
+                    Application.SetCompatibleTextRenderingDefault(true);
+                    Window window = new Window(true);
+                    Application.Run(window);
+                } else
+                {
+                    MessageBox.Show("Invalid Argument used "+args[0]+" available arguments:\n\n -tray: starts the program in automatic inside the traybar");
+                }
+            }
         }
     }
 }
