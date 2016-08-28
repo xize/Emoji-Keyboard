@@ -613,10 +613,6 @@ namespace emoji_keyboard.src
 
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -626,6 +622,16 @@ namespace emoji_keyboard.src
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void contextmenu_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

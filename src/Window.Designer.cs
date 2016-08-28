@@ -33,9 +33,6 @@ namespace emoji_keyboard.src
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window));
-            this.icon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.button79 = new System.Windows.Forms.Button();
             this.button78 = new System.Windows.Forms.Button();
             this.button77 = new System.Windows.Forms.Button();
@@ -113,34 +110,11 @@ namespace emoji_keyboard.src
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.contextMenuStrip1.SuspendLayout();
+            this.icon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextmenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextmenu.SuspendLayout();
             this.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // icon
-            // 
-            this.icon.ContextMenuStrip = this.contextMenuStrip1;
-            this.icon.Icon = ((System.Drawing.Icon)(resources.GetObject("icon.Icon")));
-            this.icon.Text = "Emoji Keyboard";
-            this.icon.Visible = true;
-            this.icon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.icon_MouseDoubleClick);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(102, 26);
-            this.contextMenuStrip1.TabStop = true;
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(101, 22);
-            this.toolStripMenuItem1.Text = "close";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // button79
             // 
@@ -1066,12 +1040,34 @@ namespace emoji_keyboard.src
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+            // icon
+            // 
+            this.icon.ContextMenuStrip = this.contextmenu;
+            this.icon.Icon = ((System.Drawing.Icon)(resources.GetObject("icon.Icon")));
+            this.icon.Text = "Emoji Keyboard";
+            this.icon.Visible = true;
+            this.icon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.icon_MouseDoubleClick);
+            // 
+            // contextmenu
+            // 
+            this.contextmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextmenu.Name = "contextmenu";
+            this.contextmenu.Size = new System.Drawing.Size(153, 48);
+            this.contextmenu.Opening += new System.ComponentModel.CancelEventHandler(this.contextmenu_Opening);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem1.Text = "close";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click_1);
+            // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(876, 629);
             this.ClientSize = new System.Drawing.Size(1187, 565);
             this.Controls.Add(this.button79);
             this.Controls.Add(this.button78);
@@ -1157,7 +1153,7 @@ namespace emoji_keyboard.src
             this.Text = "Emoji Keyboard version 1.2 (Development Edition)";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.contextMenuStrip1.ResumeLayout(false);
+            this.contextmenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1241,10 +1237,10 @@ namespace emoji_keyboard.src
         private System.Windows.Forms.Button button77;
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.Button button79;
-        public System.Windows.Forms.NotifyIcon icon;
-        private ContextMenuStrip contextMenuStrip1;
-        private ToolStripMenuItem toolStripMenuItem1;
         private ControlWindow controlwindow;
+        public NotifyIcon icon;
+        private ContextMenuStrip contextmenu;
+        private ToolStripMenuItem toolStripMenuItem1;
     }
 }
 
