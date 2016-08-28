@@ -16,11 +16,12 @@ namespace emoji_keyboard.src
         public Window(bool minimized)
         {
             InitializeComponent();
+            this.controlwindow = new ControlWindow(this);
+            this.controlwindow.Show();
             if (minimized)
             {
                 this.WindowState = FormWindowState.Minimized;
                 this.Visible = false;
-                this.controlwindow = new ControlWindow(this);
                 controlwindow.Visible = false;
                 this.icon.BalloonTipTitle = "Emoji Keyboard has been minimized";
                 this.icon.BalloonTipText = "in order to open it again, double click on the icon in the start menu";
