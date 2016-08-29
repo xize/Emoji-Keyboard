@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace emoji_keyboard.src
@@ -11,12 +14,22 @@ namespace emoji_keyboard.src
         public Button button2;
         public RichTextBox richTextBox2;
         private Label preview;
+        private CheckBox winrestart;
         private Window window;
 
         public ControlWindow(Window window)
         {
             this.window = window;
             InitializeComponent();
+            RegistryKey key = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry32).OpenSubKey("SOFTWARE").OpenSubKey("Microsoft").OpenSubKey("Windows").OpenSubKey("CurrentVersion").OpenSubKey("Run", true);
+            if (key.GetValue("Emoji-Keyboard") != null)
+            {
+                winrestart.Checked = true;
+            } else
+            {
+                winrestart.Checked = false;
+            }
+            key.Close();
         }
 
         private void InitializeComponent()
@@ -27,6 +40,7 @@ namespace emoji_keyboard.src
             this.button2 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.preview = new System.Windows.Forms.Label();
+            this.winrestart = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -85,9 +99,21 @@ namespace emoji_keyboard.src
             this.preview.TabIndex = 5;
             this.preview.Text = "Preview:";
             // 
+            // winrestart
+            // 
+            this.winrestart.AutoSize = true;
+            this.winrestart.Location = new System.Drawing.Point(12, 350);
+            this.winrestart.Name = "winrestart";
+            this.winrestart.Size = new System.Drawing.Size(134, 17);
+            this.winrestart.TabIndex = 6;
+            this.winrestart.Text = "start at windows restart";
+            this.winrestart.UseVisualStyleBackColor = true;
+            this.winrestart.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // ControlWindow
             // 
             this.ClientSize = new System.Drawing.Size(374, 385);
+            this.Controls.Add(this.winrestart);
             this.Controls.Add(this.preview);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button2);
@@ -139,6 +165,35 @@ namespace emoji_keyboard.src
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            RegistryKey key = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry32).OpenSubKey("SOFTWARE").OpenSubKey("Microsoft").OpenSubKey("Windows").OpenSubKey("CurrentVersion").OpenSubKey("Run", true);
+            string datafolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/Emoji-Keyboard";
+
+            if (winrestart.Checked)
+            {
+                //install it's self to %appdata%\Emoji-Keyboard\Emoji-Keyboard.exe if not exist yet
+                if(!Directory.Exists(datafolder))
+                {
+                    Directory.CreateDirectory(datafolder);
+                }
+
+                String filename = Process.GetCurrentProcess().ProcessName + ".exe";
+                String path = Path.Combine(Environment.CurrentDirectory, filename);
+
+                if (!File.Exists(Path.Combine(datafolder, filename)))
+                {
+                    File.Copy(path, Path.Combine(datafolder, filename), true);
+                }
+
+                key.SetValue("Emoji-Keyboard", "\""+Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+ "\\Emoji-Keyboard\\Emoji-Keyboard.exe\" -tray");
+            } else
+            {
+                key.DeleteValue("Emoji-Keyboard");
+            }
+            key.Close();
         }
     }
 }
