@@ -13,7 +13,7 @@ namespace emoji_keyboard.src
         public Button button1;
         public Button button2;
         public System.Windows.Forms.Integration.ElementHost richTextBox1;
-        private regex regex1;
+        public regex regex1;
         private CheckBox winrestart;
         private Window window;
 
@@ -76,7 +76,7 @@ namespace emoji_keyboard.src
             // winrestart
             // 
             this.winrestart.AutoSize = true;
-            this.winrestart.Location = new System.Drawing.Point(12, 350);
+            this.winrestart.Location = new System.Drawing.Point(12, 163);
             this.winrestart.Name = "winrestart";
             this.winrestart.Size = new System.Drawing.Size(134, 17);
             this.winrestart.TabIndex = 6;
@@ -98,6 +98,7 @@ namespace emoji_keyboard.src
             this.Closing += new System.ComponentModel.CancelEventHandler(this.ControlWindow_Closing);
             this.Load += new System.EventHandler(this.ControlWindow_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
