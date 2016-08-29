@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using System.Windows.Documents;
+using System.Windows.Forms.Integration;
 
 namespace emoji_keyboard.src
 {
@@ -12,7 +13,7 @@ namespace emoji_keyboard.src
     {
         public Button button1;
         public Button button2;
-        public System.Windows.Forms.Integration.ElementHost richTextBox1;
+        public ElementHost richTextBox1;
         public regex regex1;
         private CheckBox winrestart;
         private Window window;
@@ -75,7 +76,6 @@ namespace emoji_keyboard.src
             // 
             // winrestart
             // 
-            this.winrestart.AutoSize = true;
             this.winrestart.Location = new System.Drawing.Point(12, 163);
             this.winrestart.Name = "winrestart";
             this.winrestart.Size = new System.Drawing.Size(134, 17);
@@ -124,7 +124,7 @@ namespace emoji_keyboard.src
 
         private void button2_Click(object sender, EventArgs e)
         {
-        
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
