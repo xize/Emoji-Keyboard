@@ -143,53 +143,29 @@ namespace emoji_keyboard.src
         {
             RegistryKey key = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry32).OpenSubKey("SOFTWARE").OpenSubKey("Microsoft").OpenSubKey("Windows").OpenSubKey("CurrentVersion").OpenSubKey("Run", true);
             string datafolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/Emoji-Keyboard";
-
-            WindowsPrincipal pricipal = new WindowsPrincipal(WindowsIdentity.GetCurrent());
-
-            if (!pricipal.IsInRole(WindowsBuiltInRole.Administrator))
+            if (winrestart.Checked)
             {
-                RunElevated(Application.ExecutablePath);
-                Environment.Exit(0);
-            } else {
-                if (winrestart.Checked)
+            //install it's self to %appdata%\Emoji-Keyboard\Emoji-Keyboard.exe if not exist yet
+                if (!Directory.Exists(datafolder))
                 {
-                    //install it's self to %appdata%\Emoji-Keyboard\Emoji-Keyboard.exe if not exist yet
-                    if (!Directory.Exists(datafolder))
-                    {
-                        Directory.CreateDirectory(datafolder);
-                    }
+                    Directory.CreateDirectory(datafolder);
+                }
 
-                    String filename = Process.GetCurrentProcess().ProcessName + ".exe";
-                    String path = Path.Combine(Environment.CurrentDirectory, filename);
+                String filename = Process.GetCurrentProcess().ProcessName + ".exe";
+                String path = Path.Combine(Environment.CurrentDirectory, filename);
 
-                    if (!File.Exists(Path.Combine(datafolder, filename)))
-                    {
-                        File.Copy(path, Path.Combine(datafolder, filename), true);
-                    }
+                if (!File.Exists(Path.Combine(datafolder, filename)))
+                {
+                   File.Copy(path, Path.Combine(datafolder, filename), true);
+                }
 
-                    key.SetValue("Emoji-Keyboard", "\"" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Emoji-Keyboard\\Emoji-Keyboard.exe\" -tray");
+                key.SetValue("Emoji-Keyboard", "\"" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Emoji-Keyboard\\Emoji-Keyboard.exe\" -tray");
                 }
                 else
                 {
                     key.DeleteValue("Emoji-Keyboard");
                 }
                 key.Close();
-            }
-        }
-
-        private void RunElevated(string fileName)
-        {
-            ProcessStartInfo processInfo = new ProcessStartInfo();
-            processInfo.Verb = "runas";
-            processInfo.FileName = fileName;
-            try
-            {
-                Process.Start(processInfo);
-            }
-            catch (Win32Exception)
-            {
-                //Do nothing. Probably the user canceled the UAC window
-            }
         }
     }
 }
