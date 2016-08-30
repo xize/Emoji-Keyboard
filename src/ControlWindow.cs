@@ -140,7 +140,7 @@ namespace emoji_keyboard.src
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            RegistryKey key = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry32).OpenSubKey("SOFTWARE").OpenSubKey("Microsoft").OpenSubKey("Windows").OpenSubKey("CurrentVersion").OpenSubKey("Run", true);
+            RegistryKey key = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey("SOFTWARE").OpenSubKey("Microsoft").OpenSubKey("Windows").OpenSubKey("CurrentVersion").OpenSubKey("Run", true);
             string datafolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/Emoji-Keyboard";
             if (winrestart.Checked)
             {
